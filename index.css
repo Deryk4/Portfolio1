@@ -1,0 +1,158 @@
+@media (max-width:768px){
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.6)) ,url("images/clrlaptop.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    
+}
+/*Navigation Bar*/
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+}
+.nav-bar .name{
+    font-size: 24px;
+    font-weight: 500;
+    color: goldenrod;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.nav-bar a:hover{
+    color: goldenrod;
+}
+
+/*Content Sections*/
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+#home{
+    display: flex;
+    padding: 20px 50px;
+    justify-content: end;
+    gap: 20px;
+}
+#home .image{
+    padding-top: 40px;
+}
+#home .image img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#home .intro{
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 40px;
+    
+}
+#home .intro h2{
+    font-size: 48px;
+}
+#home .intro h5{
+    font-size: 24px;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+}
+#about .image img{
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+#about > .info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: -20px 20px 0px 20px;
+    text-align: center;
+    gap: 30px;
+}
+#about  h1{
+    font-family: 'Roboto' sans-serif;
+    font-size: 48px;
+    color: goldenrod;
+}
+#about > .info p{
+    font-size: 24px;
+    line-height: 1.8;
+}
+#about > .additional{
+    display: flex;
+    gap: 20px;
+}
+#about > .additional > .skills{
+    width: 80%;
+    margin: auto;
+}
+#about > .additional > .skills p{
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-family: 'Roboto' sans-serif;
+    text-align: left;
+}
+#about > .additional > .skills > .progress-bar{
+    width: 100%;
+    height: 20px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.progress{
+    height: 100%;
+    border-radius: 20px;
+    animation: load 5s ease-in-out;
+}
+@keyframes load{
+    from{
+        width: 0;
+    }
+}
+.html{
+    width: 96%;
+    background: #ff5733;
+}
+.css{
+    width: 80%;
+    background: #3498db;
+}
+.python{
+    width: 60%;
+    background: #3776AB;
+}
+.js{
+    width: 40%;
+    background: #ffc40f;
+}
+.cyber{
+    width: 30%;
+    background: #00FF41;
+}
+
