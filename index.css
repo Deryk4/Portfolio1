@@ -1,5 +1,27 @@
 @media (max-width:768px){
-    
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-bar > .nav-links {
+        margin-top: 10px;
+    }
+    #home {
+        justify-content: center;
+    }
+    }
+    #about .additional{
+        display: flex;
+        flex-direction: column;
+    }
+    #projects {
+        padding: 20px;
+    }
+   
+    #projects > .projects-container {
+        flex-direction: column;
+        gap: 20px;
+    }
     
 }
 html{
@@ -16,7 +38,7 @@ body{
     justify-content: space-between;
     padding: 20px;
     color: white;
-    
+    font-family: 'Roboto' sans-serif;
 }
 /*Navigation Bar*/
 .nav-bar{
@@ -155,4 +177,56 @@ body{
     width: 30%;
     background: #00FF41;
 }
+
+/*Projects section*/
+
+ #projects > .intro > h2{
+    font-family: 'Ubuntu' sans-serif;
+    font-size: 40px; 
+}
+#projects > .projects-container{
+    display: flex;
+    gap: 40px;
+
+}
+#projects > .projects-container > .project-card{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.5);
+}
+.project-card h4{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+    color: goldenrod;
+}
+.project-card p{
+    font-size: 14px;
+    color: white;
+}
+.project-card .btn{
+    display: inline-block;
+    background-color: transparent;
+    padding: 2px 8px;
+    gap: 2px;
+    border-radius: 5px;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.project-card .view-btn{
+    display: inline-block;
+    background-color: transparent;
+    color: goldenrod;
+    padding: 5px 10px;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 
