@@ -7,8 +7,7 @@
         margin-top: 10px;
     }
     #home {
-        justify-content: center;
-    }
+        align-items: center;
     }
     #about .additional{
         display: flex;
@@ -21,6 +20,8 @@
     #projects > .projects-container {
         flex-direction: column;
         gap: 20px;
+    }
+ 
     }
     
 
@@ -128,6 +129,7 @@ body{
 }
 #about > .additional{
     display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 #about > .additional > .skills{
@@ -186,6 +188,7 @@ body{
 }
 #projects > .projects-container{
     display: flex;
+    flex-direction: row;
     gap: 40px;
 
 }
