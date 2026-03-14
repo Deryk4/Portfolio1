@@ -18,12 +18,14 @@
     }
     #projects {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
     }
    
     #projects > .projects-container {
+        display: flex;
         flex-direction: column;
         gap: 20px;
-        padding-left: 30px;
     }
  
     }
@@ -156,7 +158,7 @@ body{
 .progress{
     height: 100%;
     border-radius: 20px;
-    animation: load 5s ease-in-out;
+    animation: load 2s ease-in-out;
 }
 @keyframes load{
     from{
@@ -165,30 +167,30 @@ body{
 }
 .html{
     width: 96%;
-    background: #ff5733;
+    background: goldenrod;
 }
 .css{
     width: 80%;
-    background: #3498db;
+    background: goldenrod;
 }
 .python{
     width: 60%;
-    background: #3776AB;
+    background: goldenrod;
 }
 .js{
     width: 40%;
-    background: #ffc40f;
+    background: goldenrod;
 }
 .cyber{
     width: 30%;
-    background: #00FF41;
+    background: goldenrod;
 }
 
 /*Projects section*/
 
  #projects > .intro > h2{
-    font-family: 'Ubuntu' sans-serif;
-    font-size: 40px; 
+    font-family: 'Ubuntu';
+    font-size: 32px; 
 }
 #projects > .projects-container{
     display: flex;
@@ -235,5 +237,99 @@ body{
     margin-top: 10px;
     cursor: pointer;
 }
+
+/*Contacts section */
+#contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contacts h3{
+    font-size: 32px;
+    font-family: 'Ubuntu';
+}
+#contacts > .contact > .image img{
+    width: 300px;
+    height: 340px;
+    border-radius: 20px;
+}
+mailto{
+    padding-top: 20px;
+    color: goldenrod;
+}
+#contacts > .contact{
+    display: flex;
+    flex-direction: row;
+}
+#contacts > .contact > .form{
+    padding: 10px 20px;
+    
+}
+#contacts > .contact > .form input{
+    background: transparent;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+#contacts > .contact > .form > .cont{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+#contacts > .contact > .form > .cont > label{
+   color: gold;
+   text-align: left;
+   padding-left: 16px;
+}
+
+textarea{
+    background: transparent;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+button{
+    border-radius: 20px;
+    height: 40px;
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+button:hover{
+    color: blue;
+    background: goldenrod;
+}
+
+
+#contacts > .contact > .reach{
+    padding: 20px;
+    color: white;
+}
+#contacts > .contact > .reach .me{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.me i{
+    font-size: 24px;
+    padding-top: 20px;
+    color: whitesmoke;
+}
+
+.me a{
+    padding-top: 20px;
+    text-decoration: none;
+    color: goldenrod;
+
+}
+.lowbar{
+    bottom: 0;
+    position: relative;
+    color: gold;
+}
+
 
 
