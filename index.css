@@ -22,10 +22,12 @@
         flex-direction: column;
     }
    
-    #projects > .projects-container {
-        display: flex;
+    #projects > .projects-container{
         flex-direction: column;
         gap: 20px;
+    }
+    #contacts{
+        flex-direction: column;
     }
  
     }
